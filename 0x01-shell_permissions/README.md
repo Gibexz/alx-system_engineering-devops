@@ -6,4 +6,5 @@ Scripts for 0x01-shell_permission Prejects
 4. Added a script that creates an empty file called hello.
 5. Wrote a script that adds execute permission to the owner of the file hello.
 6. Wrote a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
-7. 
+7. Wrote a script that adds execution permission to the owner, the group owner and the other users, to the file hello.
+8.  
