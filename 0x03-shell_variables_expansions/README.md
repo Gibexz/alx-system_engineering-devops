@@ -14,4 +14,5 @@ TASKS
 12. Combination
 13. Floats
 14. Decimal to Hexadecimal
+15. Everyone is a proponent of strong encryption
 
