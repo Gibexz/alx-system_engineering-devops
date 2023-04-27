@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#use of while loop
+
+incr=0
+while [ $incr -lt 10 ]
+do
+	echo "Best School"
+	((incr++))
+done
