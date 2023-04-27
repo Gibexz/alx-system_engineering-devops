@@ -1,0 +1,15 @@
+Your public key has been saved in 0-RSA_public_key.pub
+The key fingerprint is:
+SHA256:afYpsN73EgSwMbW/ReoCukMkqcrEa2tiM/3d2pf+hcQ root@localhost
+The key's randomart image is:
++---[RSA 3072]----+
+|      +o.        |
+|       +..       |
+|   .  . ..  .    |
+|  o .    o.o.    |
+|.. o  o S.o .E   |
+|.o  .. * o.+. .  |
+|+ o.. . o =... . |
+|oO ..o..oooo  .  |
+|=.+ oo.oo+o+o.   |
++----[SHA256]-----+
