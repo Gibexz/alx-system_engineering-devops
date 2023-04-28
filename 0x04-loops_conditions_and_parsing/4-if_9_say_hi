@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#use of while loop
+
+incr=0
+while [ $incr -lt 10 ]
+do
+	if [ $incr -eq 8 ]
+	then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((incr++))
+done
