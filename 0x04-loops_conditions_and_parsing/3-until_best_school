@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#use of until loop
+
+incr=0
+until [ $incr -gt 9 ]
+do
+	echo "Best School"
+	((incr++))
+done
