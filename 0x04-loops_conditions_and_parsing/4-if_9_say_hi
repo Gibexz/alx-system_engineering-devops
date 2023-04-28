@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-#use of while loop
+#futher use of while loop
 
 incr=0
 while [ $incr -lt 10 ]
