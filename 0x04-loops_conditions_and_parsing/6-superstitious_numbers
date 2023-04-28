@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+#use of while loop and if statements
+
+incr=1
+while [ $incr -lt 21 ]
+do
+	case $incr in
+		4)
+			echo $incr
+			echo "bad luck from China"
+			;;
+		9)
+			echo $incr
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo $incr
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo $incr
+			;;
+	esac
+	((incr++))
+done
