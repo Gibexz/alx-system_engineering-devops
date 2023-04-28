@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #use of while loop
 
 incr=0
