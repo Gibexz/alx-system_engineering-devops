@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #use of until loop
 
 incr=0
