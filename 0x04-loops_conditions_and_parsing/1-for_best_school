@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 #use of for loop
+
 for ((x=0; x<10; x++))
 do
 	echo "Best School"
