@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-# Bash script that displays numbers from 1 to 100.
+# Bash script for fizzbuzz algorithm
 
 incr=1
 while [ $incr -le 100 ];
