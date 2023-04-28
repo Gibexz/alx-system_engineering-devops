@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Bash script that displays numbers from 1 to 100.
+
+incr=1
+while [ $incr -le 100 ];
+do
+	if [ $((incr % 3)) -eq 0 ] && [ $((incr % 5)) -eq 0 ]; then
+		echo "FizzBuzz"
+
+	elif [ $((incr % 3)) -eq 0 ]; then
+		echo "Fizz"
+
+	elif [ $((incr % 5)) -eq 0 ]; then
+		echo "Buzz"
+
+	else
+		echo "$incr"
+
+	fi
+	((incr++))
+done
