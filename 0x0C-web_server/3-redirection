@@ -7,7 +7,8 @@ sudo apt -y update
 sudo apt install -y nginx
 
 # Create index.html with "Hello World!" message
-echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
+#echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
 
 # Configure redirection
 sudo sed -i '/^# server_name/a \
