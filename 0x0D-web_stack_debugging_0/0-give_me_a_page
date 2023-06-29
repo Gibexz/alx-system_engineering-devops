@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Fixed: Apache server was not runnig
+service apache2 start
