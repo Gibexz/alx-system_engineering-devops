@@ -1,0 +1,19 @@
+defaults
+        mode http
+
+frontend 222472-lb-01
+        mode http
+        bind *:80
+        #option http-server-close
+        option http-keep-alive
+        default_backend web_servers
+
+        #http-response set-header Connection keep-alive
+
+backend web_servers
+        balance roundrobin
+        option forwardfor
+        server 222472-web-01 54.197.44.197:80 check
+        server 222472-web-02 34.234.201.140:80 check
+
+        #http-response set-header Connection keep-alive
