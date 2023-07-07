@@ -3,4 +3,3 @@
 rm /etc/nginx/sites-enable/default
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enable/default
 service nginx restart
-
