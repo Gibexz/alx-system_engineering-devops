@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# debugging debuging nginx not starting. reconfiguring to default to listen to p0rt 90, and not 8080
+
+rm /etc/nginx/sites-enable/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enable/defaultservice nginx restart
+
