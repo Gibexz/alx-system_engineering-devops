@@ -1,0 +1,14 @@
+The diagram shows the following steps:
+
+The browser sends a DNS request to the DNS server to look up the IP address of the domain name "www.google.com".
+The DNS server returns the IP address of the Google server to the browser.
+The browser establishes a TCP/IP connection with the IP address of the Google server.
+The traffic is encrypted by the HTTPS/SSL protocol.
+The traffic is passed through the firewall.
+The request is distributed to the load balancer.
+The load balancer forwards the request to the web server.
+The web server generates the web page.
+The application server requests data from the database.
+The database returns the data to the application server.
+The application server generates the web page.
+The web server sends the web page back to the browser.
