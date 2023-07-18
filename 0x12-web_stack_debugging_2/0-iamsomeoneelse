@@ -7,5 +7,5 @@ if [ $# -lt 1 ]; then
 	exit 0
 else
 	#sudo -u "$1" whoami
-	su "$1" -c 'whoami'
+	su "$1" -s /bin/bash -c 'whoami'
 fi
