@@ -5,10 +5,10 @@
 
 #sudo adduser nginx
 #sudo usermod -aG sudo nginx
-sudo chmod 777 /etc/nginx/nginx.conf
+chmod 644 /etc/nginx/nginx.conf
 #sudo sed -i '15i\\tuser nginx' /etc/nginx/nginx.conf
 #sudo sed -i 's/80/8080/g' /etc/nginx/sites-available/default
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
-pkill -9 apache
+pkill apache2
 sudo -u nginx service nginx restart
