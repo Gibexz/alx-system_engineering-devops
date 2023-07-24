@@ -7,7 +7,8 @@ import requests
 
 def getEmployeeData(id):
     """
-
+    script that, using this REST API, for a given employee ID,
+    returns information about his/her TODO list progress.
     """
     todos_url = "https://jsonplaceholder.typicode.com/todos"
     user_url = "https://jsonplaceholder.typicode.com/users"
@@ -40,6 +41,7 @@ def getEmployeeData(id):
 
 
 if __name__ == "__main__":
+    """Main Function"""
     import sys
     employeId = int(sys.argv[1])
     getEmployeeData(employeId)
