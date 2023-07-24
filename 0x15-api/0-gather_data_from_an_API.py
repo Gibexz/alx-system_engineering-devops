@@ -34,7 +34,7 @@ def getEmployeeData(id):
             name = user['name']
             break
 
-    print("Employee {} is done with task({}/{}):"
+    print("Employee {} is done with tasks({}/{}):"
           .format(name, nos_tasks_completed, nos_tasks))
     for task in tasks_completed:
         print(f"\t{task}")
