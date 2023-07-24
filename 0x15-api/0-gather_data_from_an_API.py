@@ -37,7 +37,7 @@ def getEmployeeData(id):
     print("Employee {} is done with tasks({}/{}):"
           .format(name, nos_tasks_completed, nos_tasks))
     for task in tasks_completed:
-        print(f"\t{task}")
+        print(f"\t {task}")
 
 
 if __name__ == "__main__":
