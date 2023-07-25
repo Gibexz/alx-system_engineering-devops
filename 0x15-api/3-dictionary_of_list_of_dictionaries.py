@@ -12,7 +12,7 @@ def write2JSON(filename, data):
         json.dump(data, file)
 
 
-def exportEmployeeData(id):
+def exportEmployeeData():
     """
      script to export an employee data in the JSON format
     """
@@ -21,35 +21,37 @@ def exportEmployeeData(id):
 
     todos = requests.get(todos_url).json()
     users = requests.get(user_url).json()
-    
-    userIdList = []
+
     employeeDataDict = {}
-    employeeDataList = []
 
-    for user in users:
-        userIdList.append[user['id']]
-    """for user in users:
-        if id == user['id']:
-            username = user['username']"""
+    for id in range(1, len(users) + 1):
+        userId = id
 
-    for todo in todos:
-        if id == todo['userId']:
-            taskStatus = todo['completed']
-            taskTitle = todo['title']
-            employeeDataList.append({"task": taskTitle,
-                                     "completed": taskStatus,
-                                     "username": username})
-            employeeDataDict.update({id: employeeDataList})
-    """for key, value in employeeDataDict.items():
-        print(f"{key}: {value}")
-    print(employeeDataDict)
+        employeeList = []
 
-    fileName = f"{id}.json"
-    write2JSON(fileName, employeeDataDict)"""
+        username = ""
+        for user in users:
+            if user['id'] == userId:
+                username = user['username']
+
+        for todo in todos:
+            if todo['userId'] == userId:
+                temp_list = {'task': todo['title'],
+                             'completed': todo['completed'],
+                             'username': username}
+                employeeList.append(temp_list)
+
+        for user in users:
+            if user['id'] == userId:
+                username = user['username']
+
+        temp_dic = {userId: employeeList}
+        employeeDataDict.update(temp_dic)
+
+    fileName = "todo_all_employees.json"
+    write2JSON(fileName, employeeDataDict)
 
 
 if __name__ == "__main__":
     """Main Function"""
-    import sys
-    employeId = int(sys.argv[1])
-    exportEmployeeData(employeId)
+    exportEmployeeData()
