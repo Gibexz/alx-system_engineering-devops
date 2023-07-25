@@ -2,8 +2,8 @@
 """
 1-export_to_CSV.py module
 """
-import requests
 import csv
+import requests
 
 
 def write2CSV(filename, data):
