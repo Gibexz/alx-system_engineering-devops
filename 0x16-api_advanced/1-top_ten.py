@@ -18,7 +18,6 @@ def top_ten(subreddit):
         response = requests.get(url, headers=header, allow_redirects=False)
 
         if response.status_code != 200:
-            print(response.status_code)
             print("None")
             return
 

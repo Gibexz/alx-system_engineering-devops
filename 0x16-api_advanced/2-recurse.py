@@ -6,4 +6,4 @@ module: 2-recurse.py
 import requests
 
 
-de
+def recurse(subreddit, hot_list=[])
