@@ -28,9 +28,9 @@ def top_ten(subreddit):
             for post in posts_dict:
                 print(post["data"]["title"])
 
-            else:
-                print("None")
-                return
+        else:
+            print("None")
+            return
 
     except Exception as e:
         print("None")
