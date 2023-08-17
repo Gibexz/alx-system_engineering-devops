@@ -1,0 +1,31 @@
+server {
+        listen 80;
+        listen [::]:80;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+        # Note: You should disable gzip for SSL traffic.
+        # See: https://bugs.debian.org/773332
+
+        server_name 127.0.0.1 localhost 54.197.44.197;
+
+        location /airbnb-onepage/ {
+                proxy_pass http://localhost:5000/airbnb-onepage/;
+        }
+
+        location /airbnb-dynamic/number_odd_or_even/ {
+                rewrite ^/airbnb-dynamic/(.*)$ /$1 break;
+                proxy_pass http://localhost:5001;
+        }
+
+        location /api/ {
+                proxy_pass http://127.0.0.1:5002;
+        }
+
+        location / {
+                proxy_pass http://127.0.0.1:5003;
+        }
+}
