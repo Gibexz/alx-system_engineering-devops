@@ -59,6 +59,7 @@ server {
         }
 
 	location /airbnb-dynamic/number_odd_or_even/ {
+		rewrite ^/airbnb-dynamic/(.*)$ /$1 break;
                 proxy_pass http://localhost:5001/;
         #       rewrite ^/airbnb-dynamic/number_odd_or_even/(\d+)$ /number_odd_or_even/$1 last;
         }
